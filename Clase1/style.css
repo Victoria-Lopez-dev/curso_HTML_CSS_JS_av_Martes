@@ -1,0 +1,60 @@
+/* comentarios */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Sono:wght@300&display=swap');
+/*
+selector{
+    propiedad:valor
+    ...
+}
+*/
+
+/* selector -> llamar a los elementos del HTML : su id(#), su class(.), etiqueta(sin simbolos), referencia con un selector tercero*/
+
+h1{
+    color: blue;
+    background-color:violet ;
+    margin-bottom: 40px;
+    font-family: 'Rubik Iso', cursive;
+}
+
+h2{
+    background-color: aqua;
+    border:2px dashed brown  ;
+    padding:20px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texto{
+    color: red;
+    font-family: 'Sono', sans-serif;
+}
+section{
+    height: 500px;
+}
+div{
+    width: 75vw;
+    background-image: url(./images/paisaje-niebla-matutina-montanas-globos-aerostaticos-al-amanecer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height:400px;
+}
+#seccion{
+    color: green;
+    width: 50%;
+    
+    background-color: darkviolet;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-image: url(./images/instagram.svg);
+    /* list-style-type:circle; */
+}
+
+
+.globo{
+    width: 500px;
+}
+
+/* modelo de caja, propiedades para modificarla: margin(margen) - padding (relleno)- border(borde) */
+/* px % vh: view-height vw view-width*/

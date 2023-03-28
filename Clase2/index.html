@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase 2</title>
+</head>
+<body>
+    <h2>Barra predeterminada</h2>
+    <!-- usando atributos propios de video -->
+    <video controls poster="./assets/IMAGEN.jpg">
+        <!-- la etiqueta <source> le da opciones al navegador -->
+        <source src="./assets/video2.mp4" type="video/mp4" />
+        <source src="./assets/video2.ogv" type="video/ogv"/>
+    </video>
+
+    <h2>Video de Fondo</h2>
+
+    <div class="contenedor">
+        <video loop autoplay muted id="video2" onclick="pausarVideo(event.target)">
+            <source src="./assets/video2.mp4" type="video/mp4" />
+            <source src="./assets/video2.ogv" type="video/ogv"/>
+        </video>  
+      <h1>UN TITULO </h1>
+    </div>
+    
+<h2>Barra personalizada</h2>
+    <!-- con barra de navegacion personalizada-->
+    <section class="seccion-video">
+        <video  poster="./assets/IMAGEN.jpg" class="video3">
+            <source src="./assets/video2.mp4" type="video/mp4" />
+            <source src="./assets/video2.ogv" type="video/ogv"/>
+        </video> 
+        <div class="barra-rep">
+            <div class="botonera">
+                <button onclick="reproducir()"> Play </button>
+                <button onclick="pausar()"> Pausa </button>                
+            </div>
+            <p>Duracion: <span id="duracion"></span></p>
+            <p>Tiempo actual: <span id="tiempo-actual"></span></p>
+        </div>        
+    </section>
+
+
+    <script src="./condicionales-y-bucles.js"></script>
+</body>
+</html>
+<!-- controls , autoplay -->

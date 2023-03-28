@@ -1,0 +1,81 @@
+<!-- Hyper text markup lenguaje -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"><!-- forma mas recomendable de incluir CSS-->
+    <title>Repaso</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Sono:wght@300&display=swap" rel="stylesheet"> -->
+    <script src="./script.js"></script><!-- no tan recomendable -->
+
+</head>
+<body>
+   <style>
+    /* el estilo del sitio */
+   </style>
+    <!-- etiquetas : semanticas - funcionales - estructurales -->
+ <!-- titulares h: headding h1- h6 segun importancia-->
+    <h1>Titulo principal</h1>
+    <h2>Titulo secundario</h2>
+    <!-- ... -->
+    <h3>titulo menos importante</h3>
+   <!--  <br> salto en linea; si quiero generar espacios, tengo que modificar el estilo, no agregar <br>.
+Solamente lo uso si necesito hacer un punto y a parte (salto en linea) de un texto.-->
+<main>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto necessitatibus, quod quam, molestiae animi corrupti quis illo earum commodi vel, sit aliquam pariatur magnam dolor alias non incidunt maiores.<br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto necessitatibus, quod quam, molestiae animi corrupti quis illo earum commodi vel, sit aliquam pariatur magnam dolor alias non incidunt maiores.</p>
+ 
+    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione natus sed optio, totam modi recusandae iusto. Commodi alias eum corporis, rem consequuntur eaque in nisi sit sequi deserunt accusantium perspiciatis?</p>
+    <!-- listas: desorganizadas - organizadas ?? el tipo de viñeta ( numerada - no numerada)-->
+</main>
+<nav>
+    <ol><!-- organize list-->
+        <li>Item</li><!-- list item : item de la lista-->
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+
+    <ul><!-- unorganize list-->
+        <li>
+            <a href="https://www.google.com/">Ir a Google </a><!-- anchor : ancla , vincularnos a otro sitio , pagina o seccion -->
+        </li>
+        <li>
+            <a href="#seccion">Ir a otra seccion del mismo sitio</a>
+        </li>
+        <li>
+            <a href="./otraHoja.html"> Ir a otra pagina del sitio</a>
+        </li>
+    </ul>
+</nav>
+<section>
+    <div>
+        <h3 id="seccion" class="titular3">Otra seccion</h3>
+        <p class="texto" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates dolor officia blanditiis dolorum pariatur culpa commodi similique temporibus ratione, animi, eum minima expedita molestiae hic? <span style="background-color: pink;">Porro architecto ducimus fugiat possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Dolorum beatae delectus quia sed quod maiores fuga perspiciatis aliquam error tempora? Quibusdam maxime quaerat, ducimus qui error et sit exercitationem molestias.Lorremae hic? Porro architecto ducimus fugiat possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae delectus quia sed quod maiores fuga perspiciatis aliquam error tempora? Quibusdam maxime quaerat, ducimus qui error et sit exercitationem molestias.Lorre</p>
+    </div>
+</section>
+<img src="./images/travel.png" alt="imagen de una estacion de tren con un pasajeros" />
+<button>Click</button>
+<!--<input type="submit" value="enviar"/> formularios-->
+
+<form action="" method="post">
+    <input type="submit" value="">
+    
+</form>
+<img class="globo "src="./images/paisaje-niebla-matutina-montanas-globos-aerostaticos-al-amanecer.jpg" alt="">
+<script>
+    //codigo de JS - no es lo recomendado
+</script>
+
+<script src="./script.js"></script>
+</body>
+</html>
+<!-- atributos : dar un poco mas de informacion al navegador sobre la etiqueta -->
+<!-- accesibilidad : lectores de pantalla : screen readers-->
+<!-- <div> <span>-->
+<!-- etiquetas de maquetacion o landmark-->

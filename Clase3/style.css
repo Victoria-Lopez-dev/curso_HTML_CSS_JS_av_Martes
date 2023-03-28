@@ -1,0 +1,143 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap'); */
+
+/* : root?  --nombreDeLaVariable: valor */
+:root{
+    --colorAzul:royalblue;
+    --distancia:10px;
+
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(23, 86, 107);
+    margin: 0;
+    
+}
+
+nav{
+    background-color: darkcyan;
+    display: flex;
+   /* justify-content: space-around ;
+    align-items: center;*/
+    place-items: center;
+    place-content: space-around;
+
+}
+
+.menu{
+    list-style-type: none;
+    background-color: var(--colorAzul);
+    border-radius: var(--distancia);
+    color: beige;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    width: 480px;
+   /* flex-flow:f-direction f-wrap ;*/
+   flex-flow: row wrap;
+}
+
+li{
+    padding: 20px;
+    transition: background-color .5s;
+    border-radius: var(--distancia);
+    cursor: pointer;
+    
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color:black;
+    padding: 5px;
+}
+
+
+main{
+    margin: 40px 20px;
+    height: 700px;
+    display: grid;
+   /* grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(3,25vh);  */
+    row-gap: 20px;
+    column-gap: 30px;
+     /* grid-gap: 20px 30px */
+    /* grid-gap:row column*/
+    grid-template-areas: ' .     tarj1  tarj1'
+                        'tarj2   tarj3  tarj4'
+                        'tarj2     .    tarj4' ;
+}
+
+
+
+.tarjeta{
+    /* width: 300px; */
+    padding: var(--distancia);
+    border: 2px solid var(--colorAzul);
+    /*
+    border-color:var(--colorAzul);
+    ...
+    */
+    background-color: cornflowerblue;
+   
+}
+
+
+.tarjeta1{
+    background-color: violet;
+    grid-area: tarj1;
+   
+}
+.tarjeta2{
+    grid-area: tarj2;
+    background-color: red;
+    /* width: 100px; 
+    justify-self:center   -> nos permite alinear dentro de la cuadricula al elementos*/
+    
+}
+.tarjeta3{
+   grid-area: tarj3;
+}
+.tarjeta4{
+    grid-area: tarj4;
+ }
+
+a{
+    text-decoration: none;
+    color: beige;
+    background-color: brown;
+    border-radius: 5px;
+    padding: var(--distancia);
+}
+
+.itemProd:hover{
+    background-color: darkslateblue;
+    
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+
+
+
+.ejemplo{
+    width: 500px;
+    background-color: var(--colorAzul);
+    height: 50px;
+    overflow: scroll;
+}
+
+/*https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7
+
+5 tarjetas con un nombre  c/u  
+grid-template-area: t1  t1  t2  t3
+                    t4  t5  t5  t3;
+grid-gap:20px 30px*/

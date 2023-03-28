@@ -1,0 +1,46 @@
+video{
+    width: 500px;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left:35%;
+    background-color:white;
+}
+#video2{
+    width: 100%;
+}
+.contenedor{
+    width: 700px;
+    padding: 10px;
+    background-color: yellow;
+}
+button{
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px grey;
+    margin-right: 5px;
+}
+button:active{
+    transform: translate(3px,3px);
+    box-shadow: none;
+}
+.video3{
+    width: 100%;
+}
+.seccion-video{
+    background-color: black;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.barra-rep{
+    width: 100%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
