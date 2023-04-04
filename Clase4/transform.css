@@ -1,0 +1,56 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    perspective: 800px;/* siempre en el contenedor padre y nos permite indicar la distancia entre el "borde del monitor" y el plano*/
+    perspective-origin: top; 
+    margin-top: 100px;
+}
+.cubo{
+   
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;  
+    font-size: 20px;
+    
+}
+.verde{
+    background-color: green;
+    /* rotate() roateX() rotateY() rotateZ() */
+    transform: rotateY(45deg)/* grados -> deg (degree)*/;
+    /* transition: transform 5s; */
+  
+}
+.verde:hover{
+    transform: rotate(360deg);
+    transition: transform 5s;
+    /*
+        transition-property:transform
+        transition-duration:5s
+    */
+}
+
+.rojo{
+    background-color: brown;
+    /* translateX() translateY() translateZ() unidades */
+    transition: transform 5s;
+}
+.rojo:hover{
+    transform: translateZ(200px);
+}
+
+.azul{
+    background-color:blue ;
+    transition: transform 5s;
+}
+
+.azul:hover{
+        /*scaleX() scaleY(), numeros sin unidad */
+    transform: scale(2,0.5) translateX(100px)
+}
+.amarillo{
+    background-color: goldenrod;
+
+    transform: skew(25deg,50deg);
+}

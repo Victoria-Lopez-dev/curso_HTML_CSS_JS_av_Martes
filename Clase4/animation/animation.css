@@ -1,0 +1,90 @@
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;   
+}
+/* animation -> cuadro por cuadro - instancia de la animacion */
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: beige;
+    height: 50vh;
+    border: 2px solid darkgoldenrod;
+   /*  animation: traslado 10s 2;
+    animation: colores 5s 1;
+    animation-fill-mode: forwards;como "queda" en el ultimo estado de la animacion luego de terminar
+    animation-direction: alternate;*/
+    /*
+    animation-name:
+    animation-duration:
+    animation-iteration-count: numero | infinte
+    animation-direction: alternate |reverse ;
+    animation-fill-mode: forwards |backwards;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    */
+    perspective: 600px;
+    perspective-origin:top;
+}
+
+.cuboPadre{
+    background-color: lightskyblue;
+    animation: rotar 5s infinite; 
+    transform-style: preserve-3d;/* hace que "mantenga" la perspectiva los elementos internos ( los ñetos del contenedor)*/
+ 
+}
+
+.cuboHijo{
+    background-color: violet;
+    transform: rotateY(90deg);
+    transform-style: preserve-3d;/* para que tambien tome la perspectiva*/
+}
+.cubo3{
+    background-color: yellow;
+    transform: rotateY(40deg);
+}
+
+@keyframes colores{
+    from{
+        background-color: green;
+        width: 100vw;
+    }
+    to{
+        background-color: red;
+        width: 50vw;
+    }
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotateY(0deg) ;
+        background-color: blue;
+    }
+    14%{
+        background-color: rgb(13, 13, 77);
+    }
+    50%{
+        background-color: rgb(0, 68, 255);
+    }
+    100%{
+        transform: rotateY(360deg) ;
+        background-color:lightskyblue;
+    }
+}
+
+@keyframes traslado{
+    0%{
+        transform: translateX(0);
+    }
+    12%{
+        transform: translateX(500px);
+    }
+    25%{
+        transform: translate(500px,-50px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
