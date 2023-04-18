@@ -1,0 +1,50 @@
+/* body{
+    background-image: url('./imagenes/globo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+svg{
+    border: 2px solid violet;
+    margin-top: 50px;
+    perspective: 800px;
+    display: block;
+}
+
+rect{
+    animation: mover 2s 3;
+}
+
+
+.corazon{
+    height: 200px;
+    animation: latir 2s infinite steps(2);
+    border: none;
+    position: absolute;
+    top: 50vh;
+    right: 40vw;
+  
+}
+ellipse:hover{
+    display: none;
+}
+#poligonoVerde:active{
+    transform: rotate(25deg);
+}
+
+@keyframes mover{
+    from{
+        transform: translate(50px);
+    }
+    to{
+        transform: translate(150px,100)
+    }
+}
+@keyframes latir{
+    0%{
+      transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}

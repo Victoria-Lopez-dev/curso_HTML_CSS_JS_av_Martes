@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SVG</title>
+</head>
+<body>
+    <h1>Usando SVG</h1>
+
+    <img src="./imagenes/haze-programmer-writing-code-on-laptop-1.png" alt="descripcion"/>
+
+    <img src="./imagenes/undraw_appreciation_d1ka.svg" alt="">
+    <!-- otras maneras de incluir un una img SVG
+        <embed src="./imagenes/undraw_appreciation_d1ka.svg" type="">
+        <object data="./imagenes/undraw_appreciation_d1ka.svg" type=""></object> -->
+
+
+    <svg width="700px" height="500px">
+      
+      
+
+        <rect x="340" y="150" width="120px" height="100px" fill="lightblue" stroke="#f90" rx="8" stroke-width="3"></rect>
+        <circle cx="340" cy="200" r="50" stroke="brown" fill="transparent"></circle>
+
+        <ellipse cx="100" cy="400" rx="50" ry="100" fill="pink"></ellipse>
+
+        <polygon id="poligonoVerde" points="340 400,650 450,600 450,600 400,300 100"  stroke="darkgreen" fill="none" ></polygon>
+
+        <line x1="5" y1="5" x2="80" y2="200" stroke="black" stroke-width="10"></line>
+
+        <polyline points="500 100, 550 100 ,600 200,500 20" fill='none' stroke="gold" stroke-width="3"></polyline>
+
+
+    </svg>
+
+    <svg class="corazon" >
+               <!-- corazon-->
+        
+        <circle class="circuloCorazon" r="20" cx="147" cy="120" fill="pink"></circle>
+        <circle class="circuloCorazon" r="20" cx="173" cy="120" fill="pink"></circle>
+        <polygon points="130 130,190 131,160 170" fill="pink"></polygon>
+    </svg>
+</body>
+</html>
+
+<!--
+    rec -> rectangulo .Atributos : x,y (coordenadas), fill(relleno) ,stroke(contorno), rx( borde redondeado),stroke-width ( grosor del contorno)
+
+    circle -> circulo . Atributos: cx, cy (coordenada del centro), r(radio),fill(relleno) ,stroke(contorno).
+
+    ellipse  -> cy, cx (coordenada del centro), rx,ry(radio de ambos ejes ),fill(relleno) ,stroke(contorno).
+    polygon ->  fill(relleno) ,stroke(contorno), points( par de coordenadas para indicar el trazo de la figura)
+
+    line -> x1,y1 ( punto inicio  de la linea) ; x2,y2 ( punto final de la inea) , stroke(color del contorno)
+
+
+    points="x y ,x y, x y"
+-->
