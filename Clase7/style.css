@@ -1,0 +1,12 @@
+.container{
+    width: 500px;
+    height: 200px;
+    background-color: lightsalmon;
+    border: 2px solid brown;
+}
+.cubo{
+    width: 100px;
+    height: 50px;
+    background-color: violet;
+}
+

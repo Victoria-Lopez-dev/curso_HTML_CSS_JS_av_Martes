@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drag&Drop</title>
+</head>
+<body>
+    <body>
+        <h1 draggable="true" >Drag&Drop</h1>
+
+        <h2 draggable="true">un titulo</h2>
+        <h2 draggable="true">otro titulo</h2>
+
+        <div class="container zona-salmon" ondragover="prevenirDefault(event)" ondrop="soltarCubo(event)">
+            <p>Zona Destino</p>
+    
+        </div>
+        <!-- los elementos que son arrastrables por defecto son las imagenes y las anclas -->
+    
+        <a href="#">ir a algun lado...</a>
+        <img id="img-cohete" src="./imagenes/cohete.jpg" ondragstart="inicioArraste(event)"/>
+
+        <div class="cubo" draggable="true" ondragstart="arrastreCubo(event)">Contenedor</div>
+
+        <script src="./drag&drop.js"></script>
+    </body>
+    </html>
+</body>
+</html>
