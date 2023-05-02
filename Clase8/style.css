@@ -1,0 +1,117 @@
+body{
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 50px;
+    height: 150px;
+}
+.logo{
+    width: 80px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+.boton{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #133983;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    color:whitesmoke;
+    display: none;
+}
+
+.tema-boton{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: brown;
+    color:whitesmoke;
+}
+nav{
+    width: 97px;
+}
+.show{
+    display: block;
+}
+
+/*seccion cuerpo y tarjetas*/
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:100px;
+    padding: 100px;
+
+}
+
+
+button:active{
+    background-color: black;
+}
+
+.card{
+    width: 250px;
+    border: 2px solid #7EAAFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 2px;
+    background-color:#7EAAFF;
+}
+
+img{
+    width: 80%;
+}
+.compra{
+    width: 50px;
+    position: relative;
+    left: 95%;
+   
+}
+.circulo{
+    background-color:#7EAAFF;
+    width: 20px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.boton-compra{
+    background-color: #133983;
+    color: whitesmoke;
+    width: 35%;
+    min-width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+}
+/*tema noche*/
+
+.fondo{
+    background-color: #133983;
+}
+
+.botonNight{
+    background-color: #7EAAFF;
+    color: black;
+}
