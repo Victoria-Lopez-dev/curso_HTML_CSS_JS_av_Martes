@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,12 @@
         <nav>
             <button class="tema-boton" onclick="desplegar()">Tema</button>
             <ul>
-                <li><button id="day" class="boton " >Day</button></li>
-                <li><button id="night" class="boton " >Night</button></li>
+                <li>
+                    <button id="day" class="boton " onclick="temaDia()">Day</button>
+                </li>
+                <li>
+                    <button id="night" class="boton " onclick="temaNoche()">Night</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -35,7 +39,7 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra">comprar</button>
+                <button class="boton-compra" onclick="agregarProd()">comprar</button>
                 
             </div>
 
@@ -44,7 +48,7 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra">comprar</button>
+                <button class="boton-compra" onclick="agregarProd()">comprar</button>
             
             </div>   
             <div class="card">
@@ -52,12 +56,12 @@
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra">comprar</button>
+                <button class="boton-compra" onclick="agregarProd()">comprar</button>
             
             </div>        
         </section>
 
-        <button >Borrar compra</button>
+    <button id="boton-eliminar" class="boton-compra" onclick="eliminarCompra()">Eliminar Compra</button>
         
     </main>
 
